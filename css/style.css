@@ -1,3 +1,7 @@
+/* a:link {
+   color:inherit;
+} */
+
 header {
     margin-bottom: 175px;
 }
@@ -15,7 +19,21 @@ header {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    position: relative;
     
+}
+
+.submenu {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    padding: 0;
+    padding-top: 5px;
+}
+
+
+li:hover .submenu {
+    display: block;
 }
 
 .promo {
@@ -43,4 +61,10 @@ header {
 
 .section-courses-heading {
     text-align: center;
+}
+
+.fa {
+  /* font-family: "FontAwesome"; */
+  color: inherit;
+  padding-left: 5px;
 }
