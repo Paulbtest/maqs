@@ -1,9 +1,13 @@
-/* a:link {
-   color:inherit;
-} */
+/* common properties */
+body {
+    margin: 0;
+}
 
-header {
-    margin-bottom: 175px;
+.btn {
+    color: #ffffff;
+    padding: 12px 48px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #3AE4DF 0%, #7A88FF 104.29%);
 }
 
 .wrapper {
@@ -14,12 +18,31 @@ header {
 
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+/* Header Start */
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    margin-right: 10px;
+}
 
 .main-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style-type: none;
     position: relative;
+    
     
 }
 
@@ -29,6 +52,7 @@ header {
     position: absolute;
     padding: 0;
     padding-top: 5px;
+    background-color: white;
 }
 
 
@@ -36,21 +60,34 @@ li:hover .submenu {
     display: block;
 }
 
+/* Header End*/
+
 .promo {
     max-width: 357px;
     margin-left: 165px;
     margin-bottom: 165px;
+    margin-top: 175px;
+}
+
+.promo-background {
+    max-height: 700px;
+    background: linear-gradient(90deg, #FFFCEB 0%, #EAFFFE 100%);
+    padding: 0;
 }
 
 .main-content {
-    max-width: 327px;
+    max-width: 470px;
     margin-left: auto;
     margin-right: 227px;
     margin-bottom: 165px;
 }
 
-.left-side {
-    margin-left: 250px;
+.right-side {
+    margin-left: 200px;
+    background-image: url(../img/medal.svg);
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    padding: 12px 48px;
 }
 
 .section-courses {
