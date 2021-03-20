@@ -36,7 +36,22 @@ a {
 
 h1 {
     font-family: 'Product-Sans', sans-serif;
-    font-size: 56px;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.fa {
+  color: inherit;
+  padding-left: 5px;
 }
 
 /* Header Start */
@@ -99,7 +114,7 @@ li:hover .submenu {
     background-repeat: no-repeat;
     background-position: 75% center;
     padding: 0;
-    margin-bottom: 140px;
+    margin-bottom: 110px;
 }
 
 .text-promo {
@@ -117,26 +132,63 @@ li:hover .submenu {
 /* Promo end */
 
 .main-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-left: auto;
+    margin-right: 227px; */
+    margin-bottom: 70px;
+}
+
+.main-content-text-container {
     max-width: 470px;
-    margin-left: auto;
-    margin-right: 227px;
-    margin-bottom: 165px;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.main-content-image-container {
+    max-width: 442px;
+    max-height: 436px;
+    background-image: url(../img/main-content-background.svg);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    padding: 81px;
+    padding-bottom: 0;
+}
+
+.main-content-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 26px;
+}
+
+.main-content h2 {
+    padding-top: 20px;
+}
+
+.btn-main-menu {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: underline;                                               /* not working for some reason: to fix later */
+    background: linear-gradient(90deg, #3AE4DF 0%, #7A88FF 104.29%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
 }
 
 
 
-.section-courses {
+
+.courses {
     display: flex;
     list-style-type: none;
     margin-bottom: 113px;
 }
 
-.section-courses-heading {
+.courses-heading {
     text-align: center;
 }
 
-.fa {
-  /* font-family: "FontAwesome"; */
-  color: inherit;
-  padding-left: 5px;
-}
