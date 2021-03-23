@@ -114,7 +114,6 @@ li:hover .submenu {
     padding: 0;
     margin-bottom: 110px;
     z-index: 1;
-    /* margin-right: 0; */
 }
 
 .text-promo {
@@ -169,7 +168,7 @@ li:hover .submenu {
     padding-top: 20px;
 }
 
-.btn-main-menu {
+.btn-main-content {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-decoration: underline;                                               /* not working for some reason: to fix later */
@@ -184,15 +183,74 @@ li:hover .submenu {
 /* Main content end */
 
 
-.courses {
+
+
+.cards-container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     list-style-type: none;
-    margin-bottom: 113px;
+    margin-bottom: 73px;
 }
 
-.courses-heading {
-    text-align: center;
+.cards-image-container {
+    display: flex;
+    background: #FFF5F6;
+    border-radius: 4px; 
+    width: 261px;
+    height: 240px;
+    padding-bottom: 5px;
 }
+
+.card-2 {
+    background: #FFFCEB;
+}
+
+.card-3 {
+    background: #EBFFF4;
+}
+
+.cards-text-container {
+    width: 230px;
+    margin-bottom: 40px;
+}
+
+.cards-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+.card {
+    margin-right: 20px;
+}
+
+.cards-logo {
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: center;
+    width: 65%;
+}
+
+.logo-android {
+    width: 50%;
+}
+
+
+
+.cards-heading {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
 
 /* Media */
 /* Show in Large desktops and laptops */
