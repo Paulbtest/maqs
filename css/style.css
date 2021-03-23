@@ -90,8 +90,13 @@ header {
     padding: 0;
     padding-top: 5px;
     background-color: white;
+    /* border-bottom: 1px solid gray; */
 }
 
+/* .submenu li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+} */
 
 li:hover .submenu {
     display: block;
