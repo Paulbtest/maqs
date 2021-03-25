@@ -17,6 +17,19 @@ body {
     padding: 12px 48px;
     border-radius: 5px;
     background: linear-gradient(90deg, #3AE4DF 0%, #7A88FF 104.29%);
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    color: #ffffff;
+    background: linear-gradient(90deg, #35e7e1 0%, #4354f0 104.29%);
+    transition: 0.3s ease;
+}
+
+.btn:active{
+    color: #ffffff;
+    background: linear-gradient(90deg, #08d3cc 0%, #1a2fe6 104.29%);
+    transition: 0.3s ease;
 }
 
 .wrapper {
@@ -32,6 +45,17 @@ a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #7A88FF;
+    transition: 0.3s ease;
+}
+
+a:active {
+    color: #0318d1;
+    transition: 0.3s ease;
 }
 
 h1 {
@@ -83,6 +107,19 @@ header {
     background-repeat: no-repeat;
     padding: 12px 48px;
 }
+
+.right-side:hover {
+    color: #7A88FF;
+    filter: saturate(0.60);
+    transition: 0.3s ease;
+}
+
+.right-side:active {
+    color: #7A88FF;
+    filter: invert(0.60);
+    transition: 0.3s ease;
+}
+
 .submenu {
     display: none;
     list-style-type: none;
@@ -184,6 +221,27 @@ li:hover .submenu {
     color: #0B2349;
     display: table;
 }
+
+.btn-main-content:hover {
+    background: linear-gradient(90deg, #35e7e1 0%, #4354f0 104.29%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    transition: 0.3s ease;
+}
+
+.btn-main-content:active {
+    background: linear-gradient(90deg, #08d3cc 0%, #1a2fe6 104.29%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    transition: 0.3s ease;
+}
+
 
 /* Main content end */
 
