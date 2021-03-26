@@ -145,13 +145,14 @@ li:hover .submenu {
 
 .promo {
     max-width: 399px;
-    margin-left: 165px;
+    margin-left: 11%;
     margin-bottom: 165px;
     margin-top: 175px;
 }
 
 .promo-background {
-    max-height: 700px;
+    max-height: 20%;
+    overflow: hidden;
     background-image: linear-gradient(90deg, #FFFCEB 0%, #EAFFFE 100%);
     padding: 0;
     margin-bottom: 110px;
@@ -317,16 +318,39 @@ li:hover .submenu {
 
 /* Media */
 /* Show in Large desktops and laptops */
-@media (min-width: 1200px) {
 
+@media (min-width: 1921px) {
 .bgimg {
         background-image: url(../img/background-promo.svg);
         background-repeat: no-repeat;
-        background-position: 75% center;
+        background-position: 65% 50%;
         z-index: 2;
     }
 
 }
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+
+.bgimg {
+        background-image: url(../img/background-promo.svg);
+        background-repeat: no-repeat;
+        background-position: 75% 50%;
+        z-index: 2;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+
+.bgimg {
+        background-image: url(../img/background-promo.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        z-index: 2;
+    }
+
+}
+
 
 /*Hide in Other Small Devices */
 
