@@ -17,6 +17,15 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
+.fa-bars {
+    font-size: 25px;
+    
+}
+
 .btn {
     color: #ffffff;
     padding: 12px 48px;
@@ -92,18 +101,17 @@ header {
 
 .logo {
     margin-right: 10px;
+    text-decoration: none;
 }
 
-.main-menu {
+/* .main-menu {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
-    position: relative;
-    
-    
-}
+    position: relative;  
+} */
 
 .right-side {
     margin-left: 200px;
@@ -142,6 +150,10 @@ header {
 
 li:hover .submenu {
     display: block;
+}
+
+.main-menu .icon {
+  display: none;
 }
 
 /* Header End*/
@@ -322,6 +334,57 @@ li:hover .submenu {
 
 
 /* Media */
+@media screen and (min-width: 601px) {
+.main-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style-type: none;
+        position: relative;
+        text-decoration: none;
+    }
+}
+
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .main-menu li:not(:first-child) {display: none;}
+  .main-menu a.icon {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    float: right;
+    display: block;
+    margin-right: 10px;
+  }
+    .right-side {
+        margin-left: 0;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  /* .main-menu.responsive {position: relative;}
+  .main-menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10px; */
+  }
+  .main-menu.responsive li:not(:first-child) {
+    float: none;
+    display: flex;
+    text-align: left;
+    margin-right: 20px;
+    /* background-color: red; 
+    background-size: 100%; */
+  }
+
+
+
 /* Show in Large desktops and laptops */
 
 @media (min-width: 1921px) {
