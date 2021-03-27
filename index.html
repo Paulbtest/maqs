@@ -12,10 +12,10 @@
     <div class="wrapper">
         <header>
             <nav>
-                <ul class="main-menu">
+                <ul class="main-menu" id="my-main-menu">
                     <li>
                         <a href="#">
-                            <img src="img/logo.svg" class="logo">
+                            <img src="img/logo.svg" class="logo active">
                         </a>
                     </li>
                     <li>
@@ -61,8 +61,13 @@
                     </li>
 
                     <li>
-                        <a href="#" class="btn">Log in</a>
+                        <a href="#" class="btn btn-log-in">Log in</a>
                     </li>
+
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+
                 </ul>
             </nav>
         </header>
@@ -175,5 +180,16 @@
             </section>
         </div>
     <script src="https://kit.fontawesome.com/4c73c24395.js" crossorigin="anonymous"></script>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            function myFunction() {
+                let switcher = document.getElementById("my-main-menu");
+                if (switcher.className === "main-menu") {
+                   switcher.className += " responsive";
+                } else {
+                    switcher.className = "main-menu";
+                }
+            }
+    </script>
 </body>
 </html>
