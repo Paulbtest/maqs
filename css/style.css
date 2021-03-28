@@ -30,19 +30,22 @@ ul {
     color: #ffffff;
     padding: 12px 48px;
     border-radius: 5px;
-    background: linear-gradient(90deg, #3AE4DF 0%, #7A88FF 104.29%);
+    background: linear-gradient(90deg, #3AE4DF 0%, rgba(0,0,0,0) 104.29%);
+    background-color: #7A88FF;
     transition: 0.3s ease;
 }
 
 .btn:hover{
     color: #ffffff;
-    background: linear-gradient(90deg, #35e7e1 0%, #4354f0 104.29%);
+    background: linear-gradient(90deg, #35e7e1 0%, rgba(0,0,0,0) 104.29%);
+    background-color: #4354f0;
     transition: 0.3s ease;
 }
 
 .btn:active{
     color: #ffffff;
-    background: linear-gradient(90deg, #08d3cc 0%, #1a2fe6 104.29%);
+    background: linear-gradient(90deg, #08d3cc 0%, rgba(0,0,0,0) 104.29%);
+    background-color: #1a2fe6;
     transition: 0.3s ease;
 }
 
@@ -128,9 +131,9 @@ header {
     display: none;
     list-style-type: none;
     position: absolute;
-    padding: 0;
-    padding-top: 5px;
+    padding: 5px;
     background-color: white;
+    border-radius: 5px;
 }
 
 .btn-log-in {
@@ -222,16 +225,19 @@ li:hover .submenu {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-decoration: underline;                                               /* not working for some reason: to fix later */
-    background: linear-gradient(90deg, #3AE4DF 0%, #7A88FF 104.29%);
+    background: linear-gradient(90deg, #3AE4DF 0%, rgba(0,0,0,0) 104.29%);
+    background-color: #7A88FF;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0B2349;
     display: table;
+    transition: 0.3s ease;
 }
 
 .btn-main-content:hover {
-    background: linear-gradient(90deg, #35e7e1 0%, #4354f0 104.29%);
+    background: linear-gradient(90deg, #35e7e1 0%, rgba(0,0,0,0) 104.29%);
+    background-color: #4354f0;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -241,7 +247,8 @@ li:hover .submenu {
 }
 
 .btn-main-content:active {
-    background: linear-gradient(90deg, #08d3cc 0%, #1a2fe6 104.29%);;
+    background: linear-gradient(90deg, #08d3cc 0%, rgba(0,0,0,0) 104.29%);;
+    background-color: #1a2fe6;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -335,8 +342,6 @@ li:hover .submenu {
         text-decoration: none;
     }
 }
-
-
 
 
 /* When the screen is less than 1024 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
