@@ -104,15 +104,6 @@ header {
     text-decoration: none;
 }
 
-/* .main-menu {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style-type: none;
-    position: relative;  
-} */
-
 .right-side {
     margin-left: 200px;
     background-image: url(../img/medal.svg);
@@ -140,13 +131,12 @@ header {
     padding: 0;
     padding-top: 5px;
     background-color: white;
-    /* border-bottom: 1px solid gray; */
 }
 
-/* .submenu li a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-} */
+.btn-log-in {
+   margin-right: 10px;
+   
+}
 
 li:hover .submenu {
     display: block;
@@ -334,7 +324,7 @@ li:hover .submenu {
 
 
 /* Media */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 1025px) {
 .main-menu {
         display: flex;
         justify-content: space-between;
@@ -349,8 +339,8 @@ li:hover .submenu {
 
 
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+/* When the screen is less than 1024 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1024px) {
   .main-menu li:not(:first-child) {display: none;}
   .main-menu a.icon {
     position: absolute;
@@ -361,19 +351,12 @@ li:hover .submenu {
     margin-right: 25px;
   }
     .right-side {
-        margin-left: 0;
+        margin-left: -20px;
     }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  /* .main-menu.responsive {position: relative;}
-  .main-menu.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 10px; */
-  }
+@media screen and (max-width: 1024px) {
   .main-menu.responsive li:not(:first-child) {
     float: none;
     display: flex;
@@ -383,7 +366,25 @@ li:hover .submenu {
     background-size: 100%; */
   }
 
+    .submenu {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 
+    .sub-submenu {
+        position: relative;
+        left: -60px;
+
+    }
+    .sub-submenu:first-child {
+        margin-top: 15px;
+    }
+    .sub-submenu:last-child {
+        margin-bottom: 10px;
+    }
+
+}
 
 /* Show in Large desktops and laptops */
 
