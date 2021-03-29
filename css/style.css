@@ -117,13 +117,12 @@ header {
 
 .right-side:hover {
     color: #7A88FF;
-    filter: saturate(0.60);
     transition: 0.3s ease;
 }
 
 .right-side:active {
     color: #7A88FF;
-    filter: invert(0.60);
+    filter: invert(0.85);
     transition: 0.3s ease;
 }
 
@@ -331,7 +330,7 @@ li:hover .submenu {
 
 
 /* Media */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
 .main-menu {
         display: flex;
         justify-content: space-between;
@@ -344,8 +343,84 @@ li:hover .submenu {
 }
 
 
+@media (min-width: 749px) and (max-width: 1023px) {
+.main-menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style-type: none;
+        position: relative;
+        text-decoration: none;
+    }
+.main-menu li {
+    margin-right: 20px;
+}
+
+    .right-side {
+        margin-left: 20px;
+    }
+
+    .left-side {
+        margin-right: 20px;
+    }
+    
+    .btn-log-in {
+        background: none;
+        background-color: none;
+        color: inherit;
+        text-transform: uppercase;
+        margin-right: 0;
+    }
+}
+
+
+
+@media (min-width: 601px) and (max-width: 748px) {
+.main-menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style-type: none;
+        position: relative;
+        text-decoration: none;
+    }
+.main-menu li {
+    margin-right: 20px;
+}
+
+    .right-side {
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .left-side {
+        margin-right: 0;
+    }
+    
+    .btn-log-in {
+        background: none;
+        background-color: none;
+        color: inherit;
+        text-transform: uppercase;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .btn {
+        padding: 0;
+    }
+
+    .logo {
+        padding-bottom: 10px;
+    }
+
+}
+
+
 /* When the screen is less than 1024 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .main-menu li:not(:first-child) {display: none;}
   .main-menu a.icon {
     position: absolute;
@@ -361,7 +436,7 @@ li:hover .submenu {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .main-menu.responsive li:not(:first-child) {
     float: none;
     display: flex;
@@ -414,36 +489,63 @@ li:hover .submenu {
 
 }
 
+
+
 @media (min-width: 1200px) and (max-width: 1440px) {
 
 .bgimg {
         background-image: url(../img/background-promo.svg);
         background-repeat: no-repeat;
-        background-position: 95% 50%;
+        background-position: 85% 50%;
+        background-size: 50%;
         z-index: 2;
     }
+
+.right-side {
+    margin-left: 20px;
+}
 
 }
 
 
-/*Hide in Other Small Devices */
+
 
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-      .bgimg {
-        background-image: none;
+.bgimg {
+        background-image: url(../img/background-promo.svg);
+        background-repeat: no-repeat;
+        background-position: 85% 50%;
+        background-size: 45%;
+        z-index: 2;
     }
 
+    .right-side {
+    margin-left: 10px;
 }
+
+}
+
+/*Hide in Other Small Devices */
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
           .bgimg {
-        background-image: none;
+            background-image: url(../img/background-promo.svg);
+            background-repeat: no-repeat;
+            background-position: 65% 10%;
+            background-size: 35%;
+            z-index: 2;
     }
+
+        .promo {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10%;        
+        }
 
 }
 
@@ -454,6 +556,12 @@ li:hover .submenu {
         background-image: none;
     }
 
+        .promo {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10%;        
+        }
+
 }
 
 /* Portrait phones and smaller */
@@ -462,6 +570,12 @@ li:hover .submenu {
           .bgimg {
         background-image: none;
     }
+
+        .promo {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10%;      
+        }
 
 }
 
